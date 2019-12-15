@@ -40,8 +40,8 @@ namespace PIDGUI
             btConnect.BackColor = Color.LightYellow;
             btConnect.Text = "Bağlan";
 
-            cbPorts.Items.Add("COM3");
-            cbPorts.SelectedIndex = 0;
+            //cbPorts.Items.Add("COM3");
+            //cbPorts.SelectedIndex = 0;
             foreach (string port in portlar.ToList())
             {
                 cbPorts.Items.Add(port);
@@ -200,6 +200,15 @@ namespace PIDGUI
         private void tbChartYsize_ValueChanged(object sender, EventArgs e)
         {
             Ysize = tbChartYsize.Value;
+
+            if (SP.IsOpen == false)
+            {
+                chartXMin = chartXmax - Ysize;
+                chart1.ChartAreas[0].AxisX.Minimum = chartXMin;
+                chart1.ChartAreas[0].AxisX.Maximum = chartXmax;
+                chart1.Update();
+            }
+
         }
 
         private void btSend_Click(object sender, EventArgs e)
