@@ -1,0 +1,46 @@
+[1mdiff --git a/.vs/PIDGUI/v15/.suo b/.vs/PIDGUI/v15/.suo[m
+[1mindex 418f551..466960e 100644[m
+Binary files a/.vs/PIDGUI/v15/.suo and b/.vs/PIDGUI/v15/.suo differ
+[1mdiff --git a/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-shm b/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-shm[m
+[1mindex c96ce23..4bbad9a 100644[m
+Binary files a/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-shm and b/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-shm differ
+[1mdiff --git a/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-wal b/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-wal[m
+[1mindex fdf5d75..3f7d94b 100644[m
+Binary files a/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-wal and b/.vs/PIDGUI/v15/Server/sqlite3/storage.ide-wal differ
+[1mdiff --git a/PIDGUI/Form1.Designer.cs b/PIDGUI/Form1.Designer.cs[m
+[1mindex 9b23963..4824fa6 100644[m
+[1m--- a/PIDGUI/Form1.Designer.cs[m
+[1m+++ b/PIDGUI/Form1.Designer.cs[m
+[36m@@ -278,7 +278,7 @@[m
+             this.lbSample.Name = "lbSample";[m
+             this.lbSample.Size = new System.Drawing.Size(68, 13);[m
+             this.lbSample.TabIndex = 4;[m
+[31m-            this.lbSample.Text = "Sample Rate";[m
+[32m+[m[32m            this.lbSample.Text = "Sample Time";[m
+             // [m
+             // lbReceivedSample[m
+             // [m
+[1mdiff --git a/PIDGUI/bin/Debug/PIDGUI.exe b/PIDGUI/bin/Debug/PIDGUI.exe[m
+[1mindex a41d81c..560b62e 100644[m
+Binary files a/PIDGUI/bin/Debug/PIDGUI.exe and b/PIDGUI/bin/Debug/PIDGUI.exe differ
+[1mdiff --git a/PIDGUI/bin/Debug/PIDGUI.pdb b/PIDGUI/bin/Debug/PIDGUI.pdb[m
+[1mindex 8789b07..ec9ab1b 100644[m
+Binary files a/PIDGUI/bin/Debug/PIDGUI.pdb and b/PIDGUI/bin/Debug/PIDGUI.pdb differ
+[1mdiff --git a/PIDGUI/obj/Debug/PIDGUI.csproj.FileListAbsolute.txt b/PIDGUI/obj/Debug/PIDGUI.csproj.FileListAbsolute.txt[m
+[1mindex 4d85f28..dc51c62 100644[m
+[1m--- a/PIDGUI/obj/Debug/PIDGUI.csproj.FileListAbsolute.txt[m
+[1m+++ b/PIDGUI/obj/Debug/PIDGUI.csproj.FileListAbsolute.txt[m
+[36m@@ -17,3 +17,4 @@[m [mC:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csproj.GenerateResource.ca[m
+ C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csproj.CoreCompileInputs.cache[m
+ C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.exe[m
+ C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.pdb[m
+[32m+[m[32mC:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csprojAssemblyReference.cache[m
+[1mdiff --git a/PIDGUI/obj/Debug/PIDGUI.csproj.GenerateResource.cache b/PIDGUI/obj/Debug/PIDGUI.csproj.GenerateResource.cache[m
+[1mindex 0fe3f72..e79bd26 100644[m
+Binary files a/PIDGUI/obj/Debug/PIDGUI.csproj.GenerateResource.cache and b/PIDGUI/obj/Debug/PIDGUI.csproj.GenerateResource.cache differ
+[1mdiff --git a/PIDGUI/obj/Debug/PIDGUI.exe b/PIDGUI/obj/Debug/PIDGUI.exe[m
+[1mindex a41d81c..560b62e 100644[m
+Binary files a/PIDGUI/obj/Debug/PIDGUI.exe and b/PIDGUI/obj/Debug/PIDGUI.exe differ
+[1mdiff --git a/PIDGUI/obj/Debug/PIDGUI.pdb b/PIDGUI/obj/Debug/PIDGUI.pdb[m
+[1mindex 8789b07..ec9ab1b 100644[m
+Binary files a/PIDGUI/obj/Debug/PIDGUI.pdb and b/PIDGUI/obj/Debug/PIDGUI.pdb differ

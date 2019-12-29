@@ -278,7 +278,7 @@
             this.lbSample.Name = "lbSample";
             this.lbSample.Size = new System.Drawing.Size(68, 13);
             this.lbSample.TabIndex = 4;
-            this.lbSample.Text = "Sample Rate";
+            this.lbSample.Text = "Sample Time";
             // 
             // lbReceivedSample
             // 
