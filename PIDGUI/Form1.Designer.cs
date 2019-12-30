@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.btConnect = new System.Windows.Forms.Button();
             this.cbPorts = new System.Windows.Forms.ComboBox();
@@ -65,6 +65,8 @@
             this.lbReceiveDataFormat = new System.Windows.Forms.Label();
             this.lbTrasmitDataFormat = new System.Windows.Forms.Label();
             this.btSend = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOutFront)).BeginInit();
@@ -99,20 +101,20 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
             this.chart1.Location = new System.Drawing.Point(12, 38);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Blue;
-            series1.Name = "Input";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.Brown;
-            series2.Name = "Set";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Color = System.Drawing.Color.Blue;
+            series5.Name = "Input";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.Brown;
+            series6.Name = "Set";
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(1314, 363);
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
@@ -354,20 +356,24 @@
             // lbReceiveDataFormat
             // 
             this.lbReceiveDataFormat.AutoSize = true;
-            this.lbReceiveDataFormat.Location = new System.Drawing.Point(1130, 453);
+            this.lbReceiveDataFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbReceiveDataFormat.ForeColor = System.Drawing.Color.Maroon;
+            this.lbReceiveDataFormat.Location = new System.Drawing.Point(1124, 463);
             this.lbReceiveDataFormat.Name = "lbReceiveDataFormat";
-            this.lbReceiveDataFormat.Size = new System.Drawing.Size(296, 13);
+            this.lbReceiveDataFormat.Size = new System.Drawing.Size(298, 16);
             this.lbReceiveDataFormat.TabIndex = 14;
-            this.lbReceiveDataFormat.Text = "Receive Data Format: Kp | Ki | Kd | Input | Out | Setpoint \"\\n\" ";
+            this.lbReceiveDataFormat.Text = "Kp | Kp | Ki | Kd | Input | Out | Setpoint | Sample\"\\n\" ";
             // 
             // lbTrasmitDataFormat
             // 
             this.lbTrasmitDataFormat.AutoSize = true;
-            this.lbTrasmitDataFormat.Location = new System.Drawing.Point(1130, 475);
+            this.lbTrasmitDataFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrasmitDataFormat.ForeColor = System.Drawing.Color.Blue;
+            this.lbTrasmitDataFormat.Location = new System.Drawing.Point(1124, 485);
             this.lbTrasmitDataFormat.Name = "lbTrasmitDataFormat";
-            this.lbTrasmitDataFormat.Size = new System.Drawing.Size(295, 13);
+            this.lbTrasmitDataFormat.Size = new System.Drawing.Size(226, 16);
             this.lbTrasmitDataFormat.TabIndex = 14;
-            this.lbTrasmitDataFormat.Text = "Transmit Data Format: Kp | Ki | Kd | Set | Sample | Reset \"\\n\" ";
+            this.lbTrasmitDataFormat.Text = "Kp | Ki | Kd | Set | Sample | Reset \"\\n\" ";
             // 
             // btSend
             // 
@@ -379,14 +385,38 @@
             this.btSend.UseVisualStyleBackColor = true;
             this.btSend.Click += new System.EventHandler(this.btSend_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(994, 465);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Received Data:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(993, 485);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 16);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Transmitted Data:";
+            // 
             // Form1
             // 
             this.AcceptButton = this.btSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 497);
+            this.ClientSize = new System.Drawing.Size(1435, 510);
             this.Controls.Add(this.btSend);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTrasmitDataFormat);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbReceiveDataFormat);
             this.Controls.Add(this.lbTrackYaxes);
             this.Controls.Add(this.tbChartYsize);
@@ -464,6 +494,8 @@
         private System.Windows.Forms.Label lbReceiveDataFormat;
         private System.Windows.Forms.Label lbTrasmitDataFormat;
         private System.Windows.Forms.Button btSend;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
