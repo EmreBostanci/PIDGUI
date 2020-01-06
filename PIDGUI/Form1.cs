@@ -33,8 +33,10 @@ namespace PIDGUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.WhiteSmoke;
-            chart1.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.WhiteSmoke;
+            chart1.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.LightGray;
+            chart1.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.LightGray;
+            chart1.ChartAreas[0].AxisX.MajorGrid.Interval = 5;
+            chart1.ChartAreas[0].AxisY.MajorGrid.Interval = 100;
             //chart1.ChartAreas[0].AxisX.Interval = 5;
             chart1.ChartAreas[0].AxisY.Interval = 100;
 

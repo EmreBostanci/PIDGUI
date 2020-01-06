@@ -17,3 +17,4 @@ C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csproj.GenerateResource.ca
 C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csproj.CoreCompileInputs.cache
 C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.exe
 C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.pdb
+C:\Users\Yakup\Desktop\PIDGUI\PIDGUI\obj\Debug\PIDGUI.csprojAssemblyReference.cache
